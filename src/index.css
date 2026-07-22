@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #F5E8FF;
+  --color-bg-surface: #FFFFFF;
+  --color-text-primary: #181124;
+  --color-text-muted: #6D637C;
+  --color-accent-purple: #A124DB;
+  --color-accent-teal: #1E7585;
+  --color-accent-dark: #181124;
+
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-utility: "JetBrains Mono", monospace;
+}
+
+/* Base resets & styles for Kazi Reference Palette */
+body {
+  background-color: #F5E8FF;
+  color: #181124;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom keyboard focus styles */
+:focus-visible {
+  outline: 2px solid #A124DB;
+  outline-offset: 4px;
+}
+
+/* Custom utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F5E8FF;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #D9C3E6;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #A124DB;
+}
